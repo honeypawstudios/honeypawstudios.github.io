@@ -3,7 +3,7 @@ function App() {
     <div className="min-h-screen bg-gradient-to-br from-purple-900 via-blue-900 to-indigo-900 flex items-center justify-center px-4">
       <div className="max-w-4xl w-full text-center">
         {/* Logo/Studio Name */}
-        <div className="mb-8 animate-fade-in">
+        <div className="mb-8">
           <div className="flex items-center justify-center mb-6">
             <div className="text-7xl">🐾</div>
           </div>
