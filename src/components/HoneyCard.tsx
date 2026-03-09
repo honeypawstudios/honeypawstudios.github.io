@@ -1,3 +1,6 @@
+import { FaGithub } from "react-icons/fa";
+import { SiItchdotio } from "react-icons/si";
+
 export default function HoneyCard() {
   const year = new Date().getFullYear();
   return (
@@ -8,16 +11,29 @@ export default function HoneyCard() {
       <p className="mx-14 text-md md:text-xl text-yellow-900 font-semibold mb-8 tracking-wide">
         We’re a small indie game studio, and we can’t wait to show you what we’ve been working on. Stay tuned for updates!
       </p>
-      <a
-        className="mt-6 mb-12 inline-block bg-gradient-to-r from-yellow-300 to-yellow-500 text-white font-bold text-lg md:text-xl py-3 px-8 rounded-full shadow hover:from-yellow-500 hover:to-yellow-300 hover:scale-105 hover:-rotate-2 transition mb-8"
-        href="https://itch.io/c/7119283/honeypaw-releases"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        Check out our demo games!
-      </a>
-      <div className="flex items-center justify-center gap-2 text-yellow-800 text-base md:text-lg font-medium">
-        jwt2706 <span role="img" aria-label="handshake">🤝</span> luciana121
+      <div className="flex justify-center gap-12 mb-8 mt-6">
+        <a
+          href="https://github.com/honeypawstudios"
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-label="Follow us on GitHub"
+          className="group"
+        >
+          <FaGithub className="w-10 h-10 text-gray-800 group-hover:text-yellow-700 transition" />
+        </a>
+        <a
+          href="https://itch.io/c/7119283/honeypaw-releases"
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-label="See our games on Itch.io"
+          className="group"
+        >
+          <SiItchdotio className="w-10 h-10 text-[#fa5c5c] group-hover:text-yellow-700 transition" />
+        </a>
+      </div>
+      <div className="text-yellow-800 text-base md:text-md font-medium flex flex-col items-center justify-center gap-0">
+        <span>Designed with ❤️ by</span>
+        <span className="flex items-center gap-2">jwt2706 <span role="img" aria-label="handshake">🤝</span> luciana121</span>
       </div>
       <div className="mt-4 text-yellow-700 text-xs md:text-sm font-medium opacity-80">
         &copy; {year} Honeypaw Studios

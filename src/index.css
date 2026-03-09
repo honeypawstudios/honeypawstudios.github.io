@@ -1,3 +1,42 @@
+@keyframes honeyfloat {
+	0%, 100% {
+		transform: translateY(0);
+	}
+	50% {
+		transform: translateY(-8px);
+	}
+}
+
+@keyframes honeywiggle {
+	0% {
+		transform: rotate(0deg) scale(1);
+	}
+	20% {
+		transform: rotate(-10deg) scale(1.1);
+	}
+	40% {
+		transform: rotate(10deg) scale(1.1);
+	}
+	60% {
+		transform: rotate(-6deg) scale(1.08);
+	}
+	80% {
+		transform: rotate(6deg) scale(1.08);
+	}
+	100% {
+		transform: rotate(0deg) scale(1);
+	}
+}
+
+.animate-honeyfloat {
+	animation: honeyfloat 2.8s ease-in-out infinite;
+}
+.group:hover .animate-honeyfloat {
+	animation-play-state: paused;
+}
+.animate-honeywiggle {
+	animation: honeywiggle 0.7s cubic-bezier(.36,1.56,.64,1) 1;
+}
 
 @import "tailwindcss";
 
